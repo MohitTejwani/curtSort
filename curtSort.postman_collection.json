@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "ef10992e-478a-4ae2-a93f-1feefac391b2",
+		"name": "Localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19238624"
+	},
+	"item": [
+		{
+			"name": "create apikey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJYYS0yeEZlUlkxLXN6ZmNYSnJsNm9JMl9sNDJNbUZfWXozU19Hbk9kUVdZIn0.eyJleHAiOjE2Nzc2NjI1MTksImlhdCI6MTY3NzY2MTYxOSwiYXV0aF90aW1lIjoxNjc3NjYxMzMyLCJqdGkiOiI2OTUxMTQwOC05M2M5LTQ0OTItOGMxYS0zOTUzMTMwYzg3OGQiLCJpc3MiOiJodHRwczovL2lnLWRldi1hei5pbnRlbGxpZ2VuaS5jb20vYXV0aC9yZWFsbXMvaW50ZWxsaWdlbmkiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiYWFhMTkxYTYtMmVmOC00YTY5LWEyNTYtYzU5YmFhZWU3ZmRmIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaWctdWkiLCJub25jZSI6ImU3M2QyNTliLWZhNzktNDg0Mi04YjZjLTMxNmZjM2EyMzBkNSIsInNlc3Npb25fc3RhdGUiOiIwYTU0ZmVlNS1kNDllLTRkZjAtYWE4OS00YTY2ZGM2Zjg4MzEiLCJhY3IiOiIwIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInVwbiI6IjFfbW9oaXRfdGVqd2FuaV93IiwiZ3JvdXBtZW1iZXJzaGlwIjpbIlVzZXIiXSwiYWRkcmVzcyI6e30sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJ1c2VyX2lkIjoiYWFhMTkxYTYtMmVmOC00YTY5LWEyNTYtYzU5YmFhZWU3ZmRmIiwibmFtZSI6Ik1vaGl0IFJCQUMiLCJncm91cHMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsInVzZXIiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiMV9tb2hpdF90ZWp3YW5pX3ciLCJnaXZlbl9uYW1lIjoiTW9oaXQiLCJmYW1pbHlfbmFtZSI6IlJCQUMiLCJlbWFpbCI6IjFfbW9oaXRfdGVqd2FuaV93QG1pY3JvbGFuZC5jb20ifQ.FBIfqDDHzk0n1n827QWL0gq9e1NqHQAl5SSzbPcFYYvvhiYGpLGqt6OOrd2g7BNtVjLImfy7e5hQc-o-izp-wHYforUj-9ibxV5_UlWfQzxXFeMQ1FcVTfDtrvOZu-iu0KjXx7v8dDjsHrbF1drxkk-g4T8-6xcvHJu2-3_yZ66W8aftkML-jIIsBxkAOncu-TiQfKyhJhHVsfgPTb4wK-4EggyF9UTtRk9w3BIkwPcGRY-GUu1WvXax3uT-qwKlaeJ_giCOyxEZqh6DTjaQWNt4egcVaBLNzg5jZ9W3W2nCW0A6pm4e5n5Gt3QuSnnFXKEhDKjgbOZzCcxJbduqFA",
+						"type": "text"
+					},
+					{
+						"key": "tenantid",
+						"value": "61eefb67343b3a001dddad9a",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"expires_at\":\"2023-04-01T09:07:04.020Z\",\n    \"name\":\"mkc1\",\n    \"no_expiry\":true,\n    \"resource\":[\"write_igql\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4042/api/apikey/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4042",
+					"path": [
+						"api",
+						"apikey",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mohit\",\n    \"email\": \"mohit@gmail.com\",\n    \"password\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"email\": \"mohit@gmail.com\",\n            \"password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user details by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDAzMTg1NWMwOTkxNWIyNTA2ODhjZjkiLCJpYXQiOjE2Nzc5MjQ1Mzh9.MRY8-rdY8f3jJVuNmNgkN1WFKo7aE-AhcBO9yj2rfJA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDAzMTg1NWMwOTkxNWIyNTA2ODhjZjkiLCJpYXQiOjE2Nzc5MjQ1Mzh9.MRY8-rdY8f3jJVuNmNgkN1WFKo7aE-AhcBO9yj2rfJA\"\n}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/users/64031855c09915b250688cf9",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"64031855c09915b250688cf9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDAzMTg1NWMwOTkxNWIyNTA2ODhjZjkiLCJpYXQiOjE2Nzc5MjQ1Mzh9.MRY8-rdY8f3jJVuNmNgkN1WFKo7aE-AhcBO9yj2rfJA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"post 1\",\n    \"text\":\"post 1 va\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add comment to on post ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDAzMTg1NWMwOTkxNWIyNTA2ODhjZjkiLCJpYXQiOjE2Nzc5MjQ1Mzh9.MRY8-rdY8f3jJVuNmNgkN1WFKo7aE-AhcBO9yj2rfJA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"test\":\"fantastic work\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/posts/64031b422bbec606e60840ee/comments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts",
+						"64031b422bbec606e60840ee",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
